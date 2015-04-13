@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendImageViewController">
+            <connections>
+                <outlet property="image" destination="F1C-A9-3AP" id="yaH-sp-fxY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VrB-VW-Rdi">
+                    <rect key="frame" x="270" y="285" width="60" height="30"/>
+                    <state key="normal" title="发送图片">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sendImage:" destination="-1" eventType="touchUpInside" id="FlE-65-PyG"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F1C-A9-3AP">
+                    <rect key="frame" x="217" y="81" width="166" height="172"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="166" id="CFG-cH-VIu"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VrB-VW-Rdi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="eJh-Qq-0sm"/>
+                <constraint firstItem="F1C-A9-3AP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="81" id="pQa-cL-T8i"/>
+                <constraint firstAttribute="centerX" secondItem="VrB-VW-Rdi" secondAttribute="centerX" id="vnB-k8-jM2"/>
+                <constraint firstItem="VrB-VW-Rdi" firstAttribute="centerX" secondItem="F1C-A9-3AP" secondAttribute="centerX" id="xIg-Si-reH"/>
+                <constraint firstItem="VrB-VW-Rdi" firstAttribute="top" secondItem="F1C-A9-3AP" secondAttribute="bottom" constant="32" id="yFq-8n-A0r"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
