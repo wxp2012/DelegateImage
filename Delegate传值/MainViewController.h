@@ -12,6 +12,8 @@
 
 @property (nonatomic, strong ) IBOutlet UIImageView *image;  //添加一个属性，用来显示传回来的图片
 
+@property (nonatomic, strong) UILabel *label;
+
 - (IBAction) gotoVC:(id)sender;   //跳转到传递图片的页面
 
 @end
